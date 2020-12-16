@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "parcel src/index.html -d public",
-    "build": "parcel build src/index.html -d build"
+    "build": "parcel build src/index.html src/thank-you.html -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
