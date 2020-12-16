@@ -17,7 +17,10 @@
     "sass": "^1.30.0"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.6"
+    "aos": "^2.3.4",
+    "autoprefixer": "^9.8.6",
+    "gsap": "^3.5.1",
+    "lottie-web-light": "^1.1.0"
   },
   "repository": {
     "type": "git",

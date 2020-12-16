@@ -1,0 +1,152 @@
+.project-img {
+  margin: auto;
+  width: 60%;
+
+  @include respond(phone-land) {
+    //400px to 700px max-width(43.75em)
+    width: 70%;
+  }
+  @include respond(phone-prot) {
+    //0px to 400px max-width(28.125em)
+    width: 90%;
+  }
+
+  &__contain {
+    width: 100%;
+  }
+}
+
+.project {
+  &__box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      align-self: center;
+      width: 100%;
+    }
+
+    @include respond(tab-prot) {
+      //700px to 900px max-width(59.375em)
+      text-align: center;
+      width: 70%;
+    }
+  }
+
+  &__heading {
+    width: 95%;
+
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
+
+  &__none {
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      display: none;
+    }
+  }
+
+  &__quality {
+    display: flex;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.1;
+
+    @include respond(tab-prot) {
+      //700px to 900px max-width(59.375em)
+      justify-content: space-evenly;
+    }
+
+    &--2 {
+      margin-left: 2rem;
+
+      @include respond(tab-prot) {
+        //700px to 900px max-width(59.375em)
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__image {
+    width: 50%;
+
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      align-self: center;
+      width: 100%;
+    }
+
+    @include respond(tab-prot) {
+      //700px to 900px max-width(59.375em)
+      text-align: center;
+      width: 70%;
+    }
+
+    &--contain {
+      width: 100%;
+      display: flex;
+    }
+  }
+
+  &__para {
+    height: 15rem;
+    width: 95%;
+
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      margin-top: 1rem;
+      height: 100%;
+    }
+
+    @include respond(tab-prot) {
+      //700px to 900px max-width(59.375em)
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    width: 95%;
+    display: flex;
+
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      margin-top: 1rem;
+      width: 60%;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    @include respond(tab-prot) {
+      //700px to 900px max-width(59.375em).
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    @include respond(phone-prot) {
+      //0px to 400px max-width(28.125em)
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}

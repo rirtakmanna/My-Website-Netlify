@@ -1,0 +1,123 @@
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid $color-black-mid;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-40%, -40%);
+  //   animation: heartBeat 1s infinite alternate;
+  //   animation-delay: 1s;
+  pointer-events: none;
+  z-index: 99;
+
+  &::after {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    transform: translate(80%, 80%);
+    border-radius: 1px solid $color-green-light;
+    background-color: $color-green-light;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 99;
+  }
+
+  &__expand {
+    background-color: $color-green-light;
+    border: 2px solid transparent;
+    z-index: 0;
+
+    &::after {
+      z-index: 0;
+    }
+  }
+
+  &__darkAdd {
+    border: 2px solid $color-green-mid;
+
+    &::after {
+      background-color: $color-white-light;
+    }
+  }
+}
+
+.transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      45deg,
+      rgba(187, 187, 187, 0.04) 0%,
+      rgba(187, 187, 187, 0.04) 50%,
+      rgba(86, 86, 86, 0.04) 50%,
+      rgba(86, 86, 86, 0.04) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(166, 166, 166, 0.04) 0%,
+      rgba(166, 166, 166, 0.04) 50%,
+      rgba(92, 92, 92, 0.04) 50%,
+      rgba(92, 92, 92, 0.04) 100%
+    ),
+    linear-gradient(90deg, rgb(10, 16, 21), rgb(10, 16, 21));
+  background-size: 142px 142px;
+  z-index: 55;
+}
+
+.preloder {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      45deg,
+      rgba(187, 187, 187, 0.04) 0%,
+      rgba(187, 187, 187, 0.04) 50%,
+      rgba(86, 86, 86, 0.04) 50%,
+      rgba(86, 86, 86, 0.04) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(166, 166, 166, 0.04) 0%,
+      rgba(166, 166, 166, 0.04) 50%,
+      rgba(92, 92, 92, 0.04) 50%,
+      rgba(92, 92, 92, 0.04) 100%
+    ),
+    linear-gradient(90deg, rgb(10, 16, 21), rgb(10, 16, 21));
+  background-size: 142px 142px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 10000;
+
+  &__anim {
+    width: 30%;
+    border-radius: 1rem;
+    z-index: 10001;
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      width: 40%;
+    }
+    @include respond(tab-prot) {
+      //700px to 900px max-width(59.375em)
+      width: 50%;
+    }
+    @include respond(phone-land) {
+      //400px to 700px max-width(43.75em)
+      width: 65%;
+    }
+    @include respond(phone-prot) {
+      //0px to 400px max-width(28.125em)
+      width: 80%;
+    }
+  }
+  &__finish {
+    opacity: 0;
+    pointer-events: none;
+    z-index: -3;
+  }
+}

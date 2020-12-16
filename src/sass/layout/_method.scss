@@ -1,0 +1,66 @@
+.method {
+  &__container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__content {
+    width: 50%;
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      align-self: center;
+      width: 100%;
+    }
+
+    @include respond(tab-prot) {
+      //700px to 900px max-width(59.375em)
+      text-align: center;
+      width: 70%;
+    }
+  }
+
+  &__img {
+    width: 50%;
+
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      padding: 1rem;
+      align-self: center;
+      width: 100%;
+    }
+
+    @include respond(tab-prot) {
+      //700px to 900px max-width(59.375em)
+      padding: 1.5rem 1rem;
+      text-align: center;
+      width: 70%;
+    }
+  }
+
+  &__list {
+    margin-top: 2rem;
+  }
+
+  &__list {
+    list-style-image: url(./../assets/icon-dot.svg);
+    list-style-position: inside;
+    text-align: left;
+  }
+
+  &__list-item {
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+}
+
+.height__adjust {
+  width: 60%;
+  margin: auto;
+}

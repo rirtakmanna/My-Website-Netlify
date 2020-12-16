@@ -1,0 +1,47 @@
+.grid {
+  &__left {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__middle {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__width-33 {
+    width: 33.333333333333333333333%;
+
+    @include respond(phone-land) {
+      //400px to 700px max-width(43.75em)
+      width: 70%;
+    }
+    @include respond(phone-prot) {
+      //0px to 400px max-width(28.125em)
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__width-66 {
+    width: 66.666666666666666666666%;
+
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      width: 33.333333333333333333333%;
+    }
+
+    @include respond(tab-prot) {
+      //400px to 700px max-width(43.75em)
+      width: 70%;
+    }
+    @include respond(phone-prot) {
+      //0px to 400px max-width(28.125em)
+      width: 100%;
+    }
+  }
+}

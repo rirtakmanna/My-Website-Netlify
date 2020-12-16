@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,700&family=Muli:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+
+.heading {
+  &-1 {
+    font-family: $font-heading;
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: -0.012rem;
+    line-height: 5.2rem;
+    color: $color-black-mid;
+
+    @include respond(tab-land) {
+      //900px to 1200px max-width(75em)
+      font-size: 3.7rem;
+      line-height: 5rem;
+    }
+
+    @include respond(phone-land) {
+      //400px to 700px max-width(43.75em)
+      font-size: 3rem;
+      line-height: 4.5rem;
+    }
+    @include respond(phone-prot) {
+      //0px to 400px max-width(28.125em)
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  }
+
+  &-2 {
+    font-family: $font-heading;
+    font-weight: 700;
+    font-size: 3.2rem;
+    letter-spacing: -0.008rem;
+    line-height: 3.6rem;
+    color: $color-black-mid;
+
+    @include respond(phone-prot) {
+      //0px to 400px max-width(28.125em)
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+
+    &--san {
+      font-family: $font-para;
+      font-weight: 400;
+      font-size: 2.8rem;
+      letter-spacing: -0.008rem;
+      line-height: 3.6rem;
+
+      @include respond(phone-prot) {
+        //0px to 400px max-width(28.125em)
+        font-size: 2.4rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+
+  &-3 {
+    font-family: $font-heading;
+    font-weight: 400;
+    font-size: 2.3rem;
+    letter-spacing: 0.04rem;
+    line-height: 3rem;
+    color: $color-black-mid;
+
+    @include respond(phone-land) {
+      //400px to 700px max-width(43.75em)
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    @include respond(phone-prot) {
+      //0px to 400px max-width(28.125em)
+      font-size: 1.8rem;
+      line-height: 2rem;
+    }
+  }
+
+  &-4 {
+    font-weight: 400;
+    font-family: $font-para;
+    color: $color-black-mid;
+    font-size: 2rem;
+    line-height: 145%;
+    letter-spacing: 0.05rem;
+
+    @include respond(phone-land) {
+      //400px to 700px max-width(43.75em)
+      font-size: 1.8rem;
+      letter-spacing: 0.03rem;
+    }
+  }
+
+  &-san {
+    font-family: $font-heading;
+    color: $color-black-mid;
+    font-weight: 400;
+    font-size: 2.4rem;
+    letter-spacing: 0.004rem;
+    line-height: 2.4rem;
+
+    @include respond(phone-land) {
+      //400px to 700px max-width(43.75em)
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    @include respond(phone-prot) {
+      //0px to 400px max-width(28.125em)
+      font-size: 1.8rem;
+      line-height: 2rem;
+    }
+  }
+
+  &-small {
+    font-family: $font-para;
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    color: $color-white-mid;
+  }
+}

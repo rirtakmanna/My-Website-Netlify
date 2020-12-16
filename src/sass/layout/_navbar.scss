@@ -1,0 +1,92 @@
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(tab-prot) {
+    //700px to 900px max-width(59.375em)
+    display: none;
+  }
+
+  &__logo {
+    width: 16.6666666666666666666666666666666666666666666666667%;
+    height: auto;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    width: 16.6666666666666666666666666666666666666666666666667%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: $color-black-mid;
+      text-decoration: none;
+      font-family: $font-heading;
+      font-weight: 900;
+      letter-spacing: 0.1rem;
+      transition: all 0.3s $buz;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+
+    &:focus,
+    &:active {
+      transform: scale(1.04);
+    }
+  }
+}
+
+.navbar-mob {
+  height: 10vh;
+  display: none;
+  @include respond(tab-prot) {
+    //700px to 900px max-width(59.375em)
+    display: block;
+  }
+
+  &__list {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__logo {
+    width: 7%;
+    height: 90%;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: $color-black-mid;
+      text-decoration: none;
+      font-family: $font-heading;
+      font-weight: 900;
+      letter-spacing: 0.1rem;
+      transition: all 0.3s $buz;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+
+    &:focus,
+    &:active {
+      transform: scale(1.04);
+    }
+  }
+}

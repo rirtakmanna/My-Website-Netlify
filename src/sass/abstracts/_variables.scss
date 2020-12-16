@@ -1,0 +1,24 @@
+// color variable
+$color-white-dark: #c6c6c6;
+$color-white-mid: #e8e6e6;
+$color-white-light: #f9f9f9;
+
+$color-black-dark: #07090B;
+$color-black-mid: #090E13;
+$color-black-light: #0A1015;
+
+$color-green-dark: #3e6e22;
+$color-green-mid: #61961f;
+$color-green-light: #94bb4d;
+
+// font variable
+$font-para: "Muli", sans-serif;
+$font-heading: "Merriweather", serif;
+
+//cube buz
+$buz: cubic-bezier(0.34, 0.03, 0.56, 1.14);
+
+// shadow
+$shadow-large: 0 10px 20px rgba($color-black-mid, 0.2);
+$shadow-mid: 0 5px 10px rgba($color-black-mid, 0.15);
+$shadow-small: 0 2px 5px rgba($color-black-mid, 0.15);

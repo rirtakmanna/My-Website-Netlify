@@ -1,0 +1,319 @@
+.footer {
+  padding: 4.5rem 10rem;
+  background-color: $color-black-mid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(tab-prot) {
+    //700px to 900px max-width(59.375em)
+    padding: 4.5rem 7rem;
+    display: none;
+  }
+
+  @include respond(desk) {
+    //1600px - 2000px min-width(100em)
+    padding: 4.5rem 13rem;
+  }
+  @include respond(bg-desk) {
+    //2000px and up min-width(118.75em)
+    padding: 4.5rem 15rem;
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 16.6rem;
+    width: 33.333333333333333333333333333333333333333333333333333333%;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-white-light;
+      transition: all 0.3s $buz;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.02);
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      transform: scale(1);
+    }
+
+    &--icon1 {
+      width: 12%;
+      margin-left: -1rem;
+      margin-bottom: -1rem;
+    }
+    &--icon2 {
+      width: 10%;
+      margin-left: -0.5rem;
+    }
+    &--icon3 {
+      width: 8%;
+      padding-right: 0.5rem;
+      margin-right: 0.2rem;
+    }
+  }
+
+  &__content {
+    margin-left: 1rem;
+  }
+
+  &__center {
+    width: 33.3333333333333333333333333333333333333333333333333333%;
+    height: 16.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 45%;
+  }
+
+  &__navbar {
+    width: 33.33333333333333333333333333333333333333%;
+    height: 16.6rem;
+    text-align: end;
+  }
+
+  &__copyright {
+    font-family: $font-para;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.05rem;
+  }
+
+  &__pravacy {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: $color-green-light;
+      transition: all 0.3s $buz;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 0.9;
+      outline: none;
+    }
+  }
+
+  &__navlist {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__navLink {
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: $color-white-light;
+      text-decoration: none;
+      font-family: $font-para;
+      font-weight: 700;
+      letter-spacing: 0.1rem;
+      transition: all 0.3s $buz;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+
+    &:active,
+    &:focus {
+      transform: scale(1.04);
+    }
+  }
+
+  &-mob {
+    display: none;
+
+    @include respond(tab-prot) {
+      //900px to 1200px max-width(75em)
+      padding: 4.5rem 7rem;
+      display: flex;
+      background-color: $color-black-mid;
+      color: $color-white-light;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include respond(phone-land) {
+      //400px to 700px max-width(43.75em)
+      padding: 3.5rem 4rem;
+    }
+    @include respond(phone-prot) {
+      //0px to 400px max-width(28.125em)
+      padding: 3rem 2rem;
+      flex-direction: column-reverse;
+    }
+
+    &__left {
+      display: flex;
+      height: 18rem;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 50%;
+      @include respond(phone-land) {
+        //400px to 700px max-width(43.75em)
+        width: 60%;
+      }
+      @include respond(phone-prot) {
+        //0px to 400px max-width(28.125em)
+        width: 100%;
+        align-items: center;
+      }
+    }
+
+    &__logo {
+      width: 45%;
+      @include respond(phone-prot) {
+        //0px to 400px max-width(28.125em)
+        width: 30%;
+      }
+    }
+
+    &__social {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+      @include respond(phone-prot) {
+        //0px to 400px max-width(28.125em)
+        justify-content: space-around;
+      }
+    }
+
+    &__icon {
+      &:not(:first-child) {
+        margin-left: 8rem;
+        @include respond(phone-prot) {
+          //0px to 400px max-width(28.125em)
+          margin-left: 0;
+        }
+      }
+
+      &:link,
+      &:visited {
+        display: inline-block;
+        transition: all 0.3s $buz;
+      }
+
+      &:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+
+        svg {
+          fill: $color-green-light;
+        }
+      }
+
+      &:focus,
+      &:active {
+        transform: scale(1.04);
+
+        svg {
+          fill: $color-green-mid;
+        }
+      }
+
+      svg {
+        height: 3rem;
+        width: auto;
+        fill: $color-white-light;
+      }
+    }
+
+    &__copyright {
+      font-family: $font-para;
+      font-weight: 700;
+      font-size: 1rem;
+      text-align: start;
+      letter-spacing: 0.05rem;
+      @include respond(phone-prot) {
+        //0px to 400px max-width(28.125em)
+        text-align: center;
+      }
+    }
+
+    &__right {
+      display: flex;
+      height: 18rem;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 50%;
+      @include respond(phone-land) {
+        //400px to 700px max-width(43.75em)
+        width: 40%;
+      }
+      @include respond(phone-prot) {
+        //0px to 400px max-width(28.125em)
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__navlist {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      list-style: none;
+      @include respond(phone-prot) {
+        //0px to 400px max-width(28.125em)
+        flex-direction: row;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__navLink {
+      &:link,
+      &:visited {
+        display: inline-block;
+        color: $color-white-light;
+        text-decoration: none;
+        font-family: $font-para;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        transition: all 0.3s $buz;
+      }
+
+      &:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+      }
+
+      &:active,
+      &:focus {
+        transform: scale(1.04);
+      }
+    }
+  }
+}

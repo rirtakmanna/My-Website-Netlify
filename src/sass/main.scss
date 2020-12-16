@@ -1,9 +1,27 @@
-
 // abstracts
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+@import "aos/dist/aos.css";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
 // base
-@import 'base/base';
-@import 'base/typography';
-@import 'base/utilities';
+@import "base/base";
+@import "base/cursor";
+@import "base/typography";
+@import "base/utilities";
+
+// component folder
+@import "./components/button";
+
+@import "./components/form";
+@import "./components/grid";
+
+//layout folder
+@import "./layout/header";
+@import "./layout/method";
+@import "./layout/navbar";
+@import "./layout/footer";
+
+//page folder
+@import "./pages/about";
+@import "./pages/home";
+@import "./pages/project";
