@@ -278,4 +278,3 @@ window.addEventListener("load", () => {
     });
   }
 });
-
