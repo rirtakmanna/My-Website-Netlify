@@ -27,7 +27,7 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="628" />
 
-    <!-- link favicon -->
+    <!-- favricon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -60,6 +60,7 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- link css file -->
+
     <link rel="stylesheet" href="./sass/main.scss" />
 
     <!-- link js file -->
@@ -69,20 +70,14 @@
   </head>
   <body class="home">
     <div class="rapper">
-      <!-- Preloder -->
       <div class="preloder">
-        <div class="preloder_anim">
+        <div class="preloder__anim">
           <div class="load_anim" data-file="preLoad"></div>
         </div>
       </div>
-
-      <!-- Cursor -->
       <div class="transition"></div>
       <div class="cursor"></div>
-
-      <!-- Wrapper -->
       <div class="wrapper">
-        <!-- Navbar Desktop -->
         <nav class="navbar">
           <div class="navbar__logo">
             <a href="/" class="navbar__logo--link expand">
@@ -104,7 +99,6 @@
           </div>
         </nav>
 
-        <!-- Navbar Mobile -->
         <nav class="navbar-mob">
           <ul class="navbar-mob__list">
             <li class="navbar-mob__item">
@@ -122,10 +116,7 @@
             </li>
           </ul>
         </nav>
-
-        <!-- Main Section -->
         <main>
-          <!-- Header Section -->
           <header class="header-home">
             <div
               class="header-home__content"
@@ -183,7 +174,6 @@
             </div>
           </header>
 
-          <!-- Question Section -->
           <section class="question u-margin-top-large" data-aos="zoom-in">
             <div class="question__1 question__card" data-aos="fade-up-right">
               <div class="question__card--adjust">
@@ -236,7 +226,6 @@
             </div>
           </section>
 
-          <!-- Expertise Section -->
           <section class="help u-margin-top-large">
             <h2
               class="heading-1 help__header u-margin-top-mid u-aline-center"
@@ -325,8 +314,6 @@
               >
             </div>
           </section>
-
-          <!-- Idea Link Section  -->
           <section
             class="working u-margin-top-large"
             data-aos="zoom-in-right"
@@ -343,8 +330,6 @@
               >
             </div>
           </section>
-
-          <!-- Process Section -->
           <section class="method u-margin-top-large">
             <h2
               class="heading-1 u-aline-center u-margin-bottom-mid"
@@ -498,8 +483,6 @@
               </div>
             </div>
           </section>
-
-          <!-- Doubt Form Section -->
           <section
             class="doubt u-margin-top-large"
             data-aos="flip-right"
@@ -512,12 +495,10 @@
               Let's <span class="u-text-green">Talk </span>about your project
             </p>
             <form
-              name="contact"
+              name="doubt-form"
               method="POST"
-              netlify-honeypot="bot-field"
               data-netlify-recaptcha="true"
               data-netlify="true"
-              id="doubt__form"
               class="doubt__form"
             >
               <div class="form__control">
@@ -571,8 +552,6 @@
           </section>
         </main>
       </div>
-
-      <!-- Footer Desktop -->
       <footer class="footer u-text-white cursor__dark u-margin-top-large">
         <div class="footer__contact">
           <a
@@ -640,7 +619,6 @@
         </div>
       </footer>
 
-      <!-- Footer Mobile -->
       <footer class="footer-mob u-margin-top-large">
         <div class="footer-mob__left">
           <a href="/" class="footer-mob__logo">
